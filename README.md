@@ -2,15 +2,16 @@
 
 A new Flutter project.
 
-## Getting Started
+## Notes
+this app is using Bloc Fundementals 
+sqflite 2.2.2
+intl 0.18.0
+bloc 8.1.0
+flutter_bloc: ^8.1.1
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## screen shots
+![homescreen](https://live.staticflickr.com/65535/52609860295_a06f3ab63b_c.jpg)
+![homescreen](https://live.staticflickr.com/65535/52609438271_7f212c17eb_c.jpg)
+![homescreen](https://live.staticflickr.com/65535/52609860265_ff88099504_c.jpg)
+![homescreen](https://live.staticflickr.com/65535/52609931328_fc52d1193f_c.jpg)
+![homescreen](https://live.staticflickr.com/65535/52608937982_e78110f5bc_c.jpg)
