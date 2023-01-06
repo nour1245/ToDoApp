@@ -4,10 +4,11 @@ A new Flutter project.
 
 ## Notes
 #this app is using Bloc Fundementals.<br />
-sqflite 2.2.2<br />
-intl 0.18.0<br />
-bloc 8.1.0<br />
+bloc: ^8.1.0<br />
+conditional_builder_null_safety: ^0.0.6<br />
 flutter_bloc: ^8.1.1<br />
+intl: ^0.18.0<br />
+sqflite: ^2.2.2<br />
 
 ## screen shots
 ![homescreen](https://live.staticflickr.com/65535/52609860295_a06f3ab63b_c.jpg)
