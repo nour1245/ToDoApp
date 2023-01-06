@@ -2,6 +2,7 @@ import 'package:conditional_builder_null_safety/conditional_builder_null_safety.
 import 'package:flutter/material.dart';
 import 'package:todoapp/shared/cubit/cubit.dart';
 
+//defult button
 Widget DefultButtn({
   var height = 50.0,
   var color = Colors.blue,
@@ -31,6 +32,7 @@ Widget DefultButtn({
       ),
     );
 
+//defult text form field
 Widget DefultTFF({
   required TextEditingController controrller,
   required String label,
@@ -77,8 +79,18 @@ Widget DefultTFF({
         return validate(value);
       },
     );
-
+//reuseable widget to bulid the list item(task)
 Widget bulidTaskItem(Map model, context) => Dismissible(
+      background: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Icon(
+            Icons.delete,
+            color: Colors.red,
+          ),
+        ],
+      ),
+      direction: DismissDirection.endToStart,
       key: Key(model['id'].toString()),
       onDismissed: (direction) {
         AppCubit.get(context).deleteData(
@@ -106,12 +118,14 @@ Widget bulidTaskItem(Map model, context) => Dismissible(
                     style: const TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                   Text(
                     '${model['date']}',
                     style: const TextStyle(
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.white,
                     ),
                   ),
                 ],
@@ -136,7 +150,7 @@ Widget bulidTaskItem(Map model, context) => Dismissible(
               width: 5,
             ),
             IconButton(
-              color: Colors.red,
+              color: Colors.amber,
               onPressed: () {
                 AppCubit.get(context).updatData(
                   status: 'archiv',
@@ -151,7 +165,7 @@ Widget bulidTaskItem(Map model, context) => Dismissible(
         ),
       ),
     );
-
+//widget to bulid the list or show no tasks yet
 Widget tasksbuilder({
   required tasks,
 }) =>
