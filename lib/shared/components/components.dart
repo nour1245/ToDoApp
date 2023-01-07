@@ -49,6 +49,9 @@ Widget DefultTFF({
   isclickable = true,
 }) =>
     TextFormField(
+      style: TextStyle(
+        color: Colors.white,
+      ),
       enabled: isclickable,
       onChanged: (value) {
         onchange!();
@@ -65,6 +68,9 @@ Widget DefultTFF({
         prefixIcon: Icon(
           prefix,
         ),
+        labelStyle: TextStyle(color: Colors.white),
+        suffixStyle: TextStyle(color: Colors.white),
+        errorStyle: TextStyle(color: Colors.white),
         suffixIcon: suffix != null
             ? IconButton(
                 icon: Icon(suffix),
@@ -190,7 +196,7 @@ Widget tasksbuilder({
           children: const [
             Icon(
               size: 100.0,
-              Icons.menu,
+              Icons.crisis_alert,
               color: Colors.grey,
             ),
             Text(
